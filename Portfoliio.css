@@ -485,6 +485,59 @@ h3{
 
 
 
+.CERTIFICATIONS {
+  padding: 5rem 2rem;
+}
+
+.CERTIFICATIONS .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+}
+
+.CERTIFICATIONS .box {
+  height: 25rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  border: 1rem solid transparent;
+}
+
+.CERTIFICATIONS .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CERTIFICATIONS .box .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color);
+  display: grid;
+  place-items: center;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.CERTIFICATIONS .box:hover .content {
+  transform: scale(1);
+}
+
+.CERTIFICATIONS .box .content h3 {
+  font-size: 2.3rem;
+  color: var(--black);
+  transform: translateY(-3rem);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.CERTIFICATIONS .box:hover .content h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 
