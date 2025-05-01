@@ -483,12 +483,6 @@ h3{
 
 
 
-
-
-.CERTIFICATIONS {
-  padding: 5rem 2rem;
-}
-
 .CERTIFICATIONS .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -527,18 +521,18 @@ h3{
 }
 
 .CERTIFICATIONS .box .content h3 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: var(--black);
-  transform: translateY(-3rem);
+  text-transform: uppercase;
+  transform: translateY(-5rem);
   opacity: 0;
-  transition: 0.3s ease;
+  transition-delay: .3s;
 }
 
 .CERTIFICATIONS .box:hover .content h3 {
-  transform: translateY(0);
+  transform: translateY(0rem);
   opacity: 1;
 }
-
 
 
 
