@@ -30,6 +30,7 @@
       padding: 20px;
       margin-bottom: 30px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      overflow: hidden;
     }
     .project h3 {
       color: #007BFF;
@@ -41,7 +42,9 @@
       line-height: 1.6;
     }
     .thumbnail {
-      width: 120px;
+      max-width: 120px;
+      max-height: 160px;
+      object-fit: cover;
       border-radius: 5px;
       float: right;
       margin-left: 20px;
@@ -51,12 +54,16 @@
     .image-block {
       display: none;
       margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     .image-block img {
-      width: 100%;
-      max-width: 500px;
-      margin-top: 10px;
+      width: 180px;
+      height: 130px;
+      object-fit: cover;
       border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     button {
       background-color: #007BFF;
@@ -66,6 +73,7 @@
       border-radius: 5px;
       cursor: pointer;
       margin-top: 10px;
+      font-size: 0.85rem;
     }
     button:hover {
       background-color: #0056b3;
@@ -91,9 +99,7 @@
 
     <div class="project">
       <h3>Présentation Générale</h3>
-      <p>Pendant ma formation au BTS SIO, j'ai effectué mon alternance chez Orpaz, bijouterie fondée en 2017 à Paris. En plus de ses produits, elle propose aussi la conception de sites web et la gestion des réseaux sociaux.</p>
-      <p>J'ai aidé à intégrer des produits sur les plateformes, travaillé sous la supervision de Kevin, Julien et Letisia, participé à des projets importants comme le site Orpaz, son réseau social, le site Shalhevet et sa chaîne YouTube.</p>
-      <p>En plus, j’ai contribué à l’ajout de fonctionnalités aux logiciels internes, ainsi qu'à la publication de contenu sur WordPress et les réseaux sociaux.</p>
+      <p>Pendant ma formation au BTS SIO, j'ai effectué mon alternance chez Orpaz, bijouterie fondée en 2017 à Paris. En plus de ses produits, elle propose aussi la conception de sites web et la gestion des réseaux sociaux. J'ai aidé à intégrer des produits sur les plateformes, travaillé sous la supervision de Kevin, Julien et Letisia, participé à des projets importants comme le site Orpaz, son réseau social, le site Shalhevet et sa chaîne YouTube. En plus, j’ai contribué à l’ajout de fonctionnalités aux logiciels internes, ainsi qu'à la publication de contenu sur WordPress et les réseaux sociaux.</p>
     </div>
 
     <div class="project">
@@ -146,7 +152,7 @@
     </div>
 
     <div class="project">
-      <h3>Participation – Réunion Showroomprivé</h3>
+      <h3>Réunion Showroomprivé</h3>
       <img src="../RFFFF.png" class="thumbnail" alt="Réunion">
       <p>Participation à de grandes réunions avec des experts du marketing, sous la direction du fondateur.</p>
       <button onclick="toggleVisibility('reunion')">Voir les images</button>
@@ -206,7 +212,7 @@
   <script>
     function toggleVisibility(id) {
       const el = document.getElementById(id);
-      el.style.display = (el.style.display === "none") ? "block" : "none";
+      el.style.display = (el.style.display === "none") ? "flex" : "none";
     }
   </script>
 </body>
