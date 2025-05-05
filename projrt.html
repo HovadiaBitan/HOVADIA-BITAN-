@@ -53,7 +53,7 @@
     }
 
     .project h3 {
-      color: #B22222;
+      color: #007BFF;
       margin-top: 0;
     }
 
@@ -62,7 +62,7 @@
     }
 
     .project a {
-      color: #B22222;
+      color: #007BFF;
       text-decoration: none;
       font-weight: bold;
     }
@@ -95,7 +95,7 @@
     }
 
     button {
-      background-color: #B22222;
+      background-color: #007BFF;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -105,7 +105,7 @@
     }
 
     button:hover {
-      background-color: #8B0000;
+      background-color: #0056b3;
     }
 
     @media (max-width: 768px) {
@@ -130,6 +130,7 @@
 
   <div class="container">
 
+    <!-- Projets 1 à 9 avec miniatures -->
     <div class="project">
       <h3>PROJET N°1 – CV</h3>
       <p>Projet HTML, CSS, PHP, MySQL réalisé en 1ère année de BTS. <br>
@@ -142,7 +143,105 @@
       </div>
     </div>
 
-    <!-- Répète cette structure pour les autres projets, en changeant ID, lien, image, etc. -->
+    <div class="project">
+      <h3>PROJET N°2 – Attestation Covid</h3>
+      <p>Projet réalisé en terminale durant la crise sanitaire.<br>
+        <a href="https://github.com/HovadiaBitan/Portfolio-Hovadia-Bitan/tree/main/Attestation" target="_blank">Code GitHub</a>
+      </p>
+      <img src="./Projet personnel/PROJET 3 ATTESTATION/PHOTOS/82.png" alt="Miniature Attestation" class="thumbnail">
+      <button onclick="toggleVisibility('img2')">Voir les images</button>
+      <div id="img2" class="image-block" style="display: none;">
+        <img src="./Projet personnel/PROJET 3 ATTESTATION/PHOTOS/82.png" alt="">
+        <img src="./Projet personnel/PROJET 3 ATTESTATION/PHOTOS/83.png" alt="">
+        <img src="./Projet personnel/PROJET 3 ATTESTATION/PHOTOS/84.png" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°3 – Tombola</h3>
+      <p>Projet de billetterie tombola en ligne.<br>
+        <a href="https://github.com/HovadiaBitan/Portfolio-Hovadia-Bitan/tree/main/19COURS%20TOMBOLA%2009FEVRIER22" target="_blank">Code GitHub</a>
+      </p>
+      <img src="./Projet personnel/projet 2 tombola/photos/Capture web_9-4-2023_153722_localhost.jpeg" alt="Miniature Tombola" class="thumbnail">
+      <button onclick="toggleVisibility('img3')">Voir les images</button>
+      <div id="img3" class="image-block" style="display: none;">
+        <img src="./Projet personnel/projet 2 tombola/photos/Capture web_9-4-2023_153722_localhost.jpeg" alt="">
+        <img src="./Projet personnel/projet 2 tombola/photos/Capture web_10-4-2023_17539_localhost.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°4 – Enregistrement CV</h3>
+      <p>Formulaire d'enregistrement de CV en ligne.<br>
+        <a href="https://github.com/HovadiaBitan/Portfolio-Hovadia-Bitan/tree/main/ENREGISTRE%20VOUS%20CV/060422" target="_blank">Code GitHub</a>
+      </p>
+      <img src="./Projet personnel/ENREGISTRE CV/Capture web_10-4-2023_17227_localhost.jpeg" alt="Miniature CV enregistrable" class="thumbnail">
+      <button onclick="toggleVisibility('img4')">Voir les images</button>
+      <div id="img4" class="image-block" style="display: none;">
+        <img src="./Projet personnel/ENREGISTRE CV/Capture web_10-4-2023_17227_localhost.jpeg" alt="">
+        <img src="./Projet personnel/ENREGISTRE CV/Capture web_10-4-2023_172317_localhost.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°5 – Gestion de Produits</h3>
+      <p>Application CRUD pour gérer les produits.<br>
+        <a href="https://github.com/HovadiaBitan/Portfolio-Hovadia-Bitan/tree/main/22%20COUS%2009MARS22%20FIN%20-GestionProduitCRUD" target="_blank">Code GitHub</a>
+      </p>
+      <img src="./Projet personnel/PROJET5 INSERT PRODUIT/Capture web_10-4-2023_17424_localhost.jpeg" alt="Miniature Gestion Produit" class="thumbnail">
+      <button onclick="toggleVisibility('img5')">Voir les images</button>
+      <div id="img5" class="image-block" style="display: none;">
+        <img src="./Projet personnel/PROJET5 INSERT PRODUIT/Capture web_10-4-2023_17424_localhost.jpeg" alt="">
+        <img src="./Projet personnel/PROJET5 INSERT PRODUIT/Capture web_10-4-2023_174310_localhost.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°6 – Derchou</h3>
+      <p>Gestion d’un concours en ligne avec base de données.<br>
+        <a href="https://github.com/HovadiaBitan/Portfolio-Hovadia-Bitan/tree/main/301122" target="_blank">Code GitHub</a>
+      </p>
+      <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="Miniature Derchou" class="thumbnail">
+      <button onclick="toggleVisibility('img6')">Voir les images</button>
+      <div id="img6" class="image-block" style="display: none;">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192752_.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°7 – Investissement Or</h3>
+      <p>Site de suivi et d’investissement dans l’or (avec maquette).<br>
+        <a href="./lozgo.pdf" target="_blank">Voir la maquette PDF</a>
+      </p>
+      <img src="./MOURICE.jpg" alt="Miniature Or" class="thumbnail">
+      <button onclick="toggleVisibility('img7')">Voir la maquette</button>
+      <div id="img7" class="image-block" style="display: none;">
+        <img src="./MOURICE.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°8 – Gold Mines</h3>
+      <p>Site e-commerce sur le thème de l’or.</p>
+      <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="Miniature Gold Mines" class="thumbnail">
+      <button onclick="toggleVisibility('img8')">Voir les images</button>
+      <div id="img8" class="image-block" style="display: none;">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192752_.jpeg" alt="">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>PROJET N°9 – Créateur de Factures</h3>
+      <p>Application simple de création de factures PDF.</p>
+      <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="Miniature Facture" class="thumbnail">
+      <button onclick="toggleVisibility('img9')">Voir les images</button>
+      <div id="img9" class="image-block" style="display: none;">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192549_localhost.jpeg" alt="">
+        <img src="./Projet personnel/PROJER N6 PRIME/Capture web_14-4-2023_192752_.jpeg" alt="">
+      </div>
+    </div>
 
   </div>
 
