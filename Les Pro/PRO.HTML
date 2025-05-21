@@ -54,7 +54,6 @@
     .image-block {
       display: none;
       margin-top: 15px;
-      display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
@@ -99,13 +98,13 @@
 
     <div class="project">
       <h3>Présentation Générale</h3>
-      <p>Pendant ma formation au BTS SIO, j'ai effectué mon alternance chez Orpaz, bijouterie fondée en 2017 à Paris. En plus de ses produits, elle propose aussi la conception de sites web et la gestion des réseaux sociaux. J'ai aidé à intégrer des produits sur les plateformes, travaillé sous la supervision de Kevin, Julien et Letisia, participé à des projets importants comme le site Orpaz, son réseau social, le site Shalhevet et sa chaîne YouTube. En plus, j’ai contribué à l’ajout de fonctionnalités aux logiciels internes, ainsi qu'à la publication de contenu sur WordPress et les réseaux sociaux.</p>
+      <p>Pendant ma formation au BTS SIO, j'ai effectué mon alternance chez Orpaz...</p>
     </div>
 
     <div class="project">
       <h3>OrpazFrance – Site Web</h3>
       <img src="./projet ORPAZ photos/accueil2.jpeg" class="thumbnail" alt="Orpaz site">
-      <p>Développement du site officiel Orpaz, vitrine en ligne pour présenter les produits de la bijouterie.</p>
+      <p>Développement du site officiel Orpaz, vitrine en ligne...</p>
       <button onclick="toggleVisibility('orpazSite')">Voir les images</button>
       <div id="orpazSite" class="image-block">
         <img src="./projet ORPAZ photos/accueil2.jpeg">
@@ -117,7 +116,7 @@
     <div class="project">
       <h3>Plateforme Etsy</h3>
       <img src="./projet ORPAZ photos/ETSY2.jpg" class="thumbnail" alt="Etsy">
-      <p>Gestion et amélioration de la boutique Etsy d'Orpaz pour vendre des produits artisanaux en ligne.</p>
+      <p>Gestion et amélioration de la boutique Etsy d'Orpaz...</p>
       <button onclick="toggleVisibility('etsy')">Voir les images</button>
       <div id="etsy" class="image-block">
         <img src="./projet ORPAZ photos/WhatsDDDApp Image 2023-04-10 à 19.23.25.jpg">
@@ -154,7 +153,7 @@
     <div class="project">
       <h3>Réunion Showroomprivé</h3>
       <img src="../RFFFF.png" class="thumbnail" alt="Réunion">
-      <p>Participation à de grandes réunions avec des experts du marketing, sous la direction du fondateur.</p>
+      <p>Participation à de grandes réunions avec des experts du marketing...</p>
       <button onclick="toggleVisibility('reunion')">Voir les images</button>
       <div id="reunion" class="image-block">
         <img src="../RFFFF.png">
@@ -212,7 +211,11 @@
   <script>
     function toggleVisibility(id) {
       const el = document.getElementById(id);
-      el.style.display = (el.style.display === "none") ? "flex" : "none";
+      if (el.style.display === "none" || el.style.display === "") {
+        el.style.display = id === 'cahier' ? "block" : "flex";
+      } else {
+        el.style.display = "none";
+      }
     }
   </script>
 </body>
